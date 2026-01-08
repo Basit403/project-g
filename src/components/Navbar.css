@@ -1,105 +1,107 @@
-/* Navbar wrapper */
-.navbar {
+.navbar-wrapper {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 90px;              /* BIGGER HEIGHT */
-  background: #000;         /* BLACK */
+  background: #0b0b0b;
   z-index: 1000;
 }
 
-/* Inner container */
-.nav-inner {
+.navbar {
   max-width: 1200px;
-  height: 100%;
   margin: 0 auto;
-  padding: 0 40px;
-  display: flex;            /* FLEX */
+  height: 80px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 24px;
 }
 
-/* Logo */
 .logo {
+  font-size: 26px;
+  font-weight: 700;
   color: #fff;
-  font-size: 24px;
-  font-weight: bold;
 }
 
-/* Links */
 .nav-links {
+  display: flex;
+  gap: 32px;
   list-style: none;
-  display: flex;            /* DISPLAY FLEX */
-  gap: 40px;
 }
 
-.nav-links li a {
+.nav-links a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 17px;
 }
 
-.nav-links li a:hover {
-  color: #f97316;
-}
-
-/* Buttons */
 .auth-buttons {
   display: flex;
-  gap: 15px;
-}
-
-.btn {
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
+  gap: 14px;
 }
 
 .login-btn {
-  background: transparent;
-  border: 1px solid #f97316;
-  color: #f97316;
+  padding: 10px 20px;
+  border: 1px solid #ff7a00;
+  color: #ff7a00;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
 .signup-btn {
-  background: #f97316;
-  color: #fff;
+  padding: 10px 22px;
+  background: #ff7a00;
+  color: #000;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
-/* Mobile menu icon */
-.menu {
+.hamburger {
   display: none;
-  font-size: 28px;
-  color: white;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #fff;
   cursor: pointer;
 }
 
-/* 🔥 Mobile responsiveness */
+.mobile-menu {
+  background: #0b0b0b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  padding: 30px 20px;
+}
+
+.mobile-menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.login-btn,
+.signup-btn {
+  display: flex;
+  align-items: center;        
+  justify-content: center;    
+  text-align: center;
+}
+
+.mobile-auth {
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+
 @media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 90px;
-    left: 0;
-    width: 100%;
-    background: #000;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    padding: 30px 0;
-    display: none;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
+  .nav-links,
   .auth-buttons {
     display: none;
   }
 
-  .menu {
+  .hamburger {
     display: block;
   }
 }

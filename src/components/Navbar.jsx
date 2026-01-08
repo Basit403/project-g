@@ -1,34 +1,43 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="navbar">
-      <div className="nav-inner">
-        {/* Logo */}
+    <header className="navbar-wrapper">
+      <div className="navbar">
         <div className="logo">MyBlog</div>
 
-        {/* Links */}
-        <ul className={`nav-links ${open ? "open" : ""}`}>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#about">About</a></li>
+        <ul className="nav-links">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/about">About</Link></li>
         </ul>
 
-        {/* Auth buttons */}
         <div className="auth-buttons">
-          <Link to="/login" className="btn login-btn">Login</Link>
-          <Link to="/signup" className="btn signup-btn">Sign Up</Link>
+          <Link to="/login" className="login-btn">Login</Link>
+          <Link to="/signup" className="signup-btn">Sign Up</Link>
         </div>
 
-        {/* Mobile menu */}
-        <div className="menu" onClick={() => setOpen(!open)}>
+        <button className="hamburger" onClick={() => setOpen(!open)}>
           ☰
-        </div>
+        </button>
       </div>
-    </nav>
+
+      {open && (
+        <div className="mobile-menu">
+          <Link to="/">Home</Link>
+          <Link to="/blog">Blog</Link>
+          <Link to="/about">About</Link>
+
+          <div className="mobile-auth">
+            <Link to="/login" className="login-btn">Login</Link>
+            <Link to="/signup" className="signup-btn">Sign Up</Link>
+          </div>
+        </div>
+      )}
+    </header>
   );
 }
