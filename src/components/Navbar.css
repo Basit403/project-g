@@ -6,14 +6,17 @@
   z-index: 1000;
 }
 
-.navbar {
+.navbar-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 24px;
+}
+
+.navbar {
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 24px;
+  justify-content: space-between; 
 }
 
 .logo {
@@ -62,6 +65,7 @@
   border: none;
   color: #fff;
   cursor: pointer;
+  padding-left: 220px;
 }
 
 .mobile-menu {
