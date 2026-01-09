@@ -1,12 +1,12 @@
-export default function Signup() {
-    return (
-      <div className="page">
-        <h1>Sign Up</h1>
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <button>Create Account</button>
-      </div>
-    );
-  }
-  
+export default function Login() {
+  return (
+    <div style={{
+      minHeight: "100vh",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center"
+    }}>
+      <h1>Signup Page</h1>
+    </div>
+  );
+}

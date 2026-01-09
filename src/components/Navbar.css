@@ -37,6 +37,11 @@
   font-size: 17px;
 }
 
+.nav-links a:hover {
+  text-decoration: none;
+  color: #ff7a00;
+}
+
 .auth-buttons {
   display: flex;
   gap: 14px;
@@ -56,6 +61,18 @@
   color: #000;
   border-radius: 6px;
   text-decoration: none;
+}
+
+.login-btn:hover {
+  background: #ff9800;
+  color: #000;
+  transition: opacity 0.3s ease;
+}
+
+.signup-btn:hover{
+  background: #ff9800;
+  color: #000;
+  transition: opacity 0.3s ease;
 }
 
 .hamburger {
