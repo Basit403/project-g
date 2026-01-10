@@ -107,6 +107,10 @@
   text-decoration: none;
 }
 
+.mobile-menu li {
+  text-decoration: none;
+}
+
 .login-btn,
 .signup-btn {
   display: flex;
