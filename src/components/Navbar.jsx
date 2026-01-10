@@ -30,7 +30,7 @@ export default function Navbar() {
       {open && (
           <div className="mobile-menu">
             <Link to="/">Home</Link>
-            <li><a href="#latest-blogs">Blog</a></li>
+            <li><a href="#latest-blogs" className="b">Blog</a></li>
             <li><a href="#about">About</a></li>
 
             <div className="mobile-auth">
