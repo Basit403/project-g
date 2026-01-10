@@ -42,14 +42,14 @@
   margin: 0 20px 20px;
 }
 
-.read-more {
+.read-moree {
   margin-left: 20px;
   color: #ff7a00;
   font-weight: bold;
   text-decoration: none;
 }
 
-.read-more:hover {
+.read-moree:hover {
   text-decoration: underline;
 }
 

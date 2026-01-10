@@ -13,7 +13,7 @@ export default function FeaturedBlogs() {
           <p>
             Discover simple ways to improve your lifestyle with less stress.
           </p>
-          <Link to="/blog/1" className="read-more">
+          <Link to="/blog/1" className="read-moree">
             Read More →
           </Link>
         </div>
@@ -24,7 +24,7 @@ export default function FeaturedBlogs() {
           <p>
             Small habits that make a big difference in your daily routine.
           </p>
-          <Link to="/blog/2" className="read-more">
+          <Link to="/blog/2" className="read-moree">
             Read More →
           </Link>
         </div>
@@ -35,7 +35,7 @@ export default function FeaturedBlogs() {
           <p>
             Learn how to balance work and personal life effectively.
           </p>
-          <Link to="/blog/3" className="read-more">
+          <Link to="/blog/3" className="read-moree">
             Read More →
           </Link>
         </div>

@@ -13,8 +13,8 @@ export default function Navbar() {
 
           <ul className="nav-links">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/blog">Blog</Link></li>
-            <li><Link to="/about">About</Link></li>
+            <li><a href="#latest-blogs">Blog</a></li>
+            <li><a href="#about">About</a></li>
           </ul>
 
           <div className="auth-buttons">
@@ -30,8 +30,8 @@ export default function Navbar() {
       {open && (
           <div className="mobile-menu">
             <Link to="/">Home</Link>
-            <Link to="/blog">Blog</Link>
-            <Link to="/about">About</Link>
+            <li><a href="#latest-blogs">Blog</a></li>
+            <li><a href="#about">About</a></li>
 
             <div className="mobile-auth">
               <Link to="/login" className="login-btn">Login</Link>

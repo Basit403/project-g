@@ -1,0 +1,36 @@
+.testimonials {
+  padding: 100px 6%;
+  background: #1d1919;
+  text-align: center;
+  color: #ffffff;
+}
+
+.testimonials-title {
+  font-size: 52px;   
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.testimonial-text {
+  max-width: 900px;
+  margin: auto;
+  font-size: 26px;     
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.testimonial-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .testimonials-title {
+    font-size: 36px;
+  }
+
+  .testimonial-text {
+    font-size: 20px;
+  }
+}
+

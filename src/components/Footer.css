@@ -1,0 +1,16 @@
+.footer {
+  padding: 40px 6%;
+  background: #1d1919;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+  opacity: 0.8;
+}
